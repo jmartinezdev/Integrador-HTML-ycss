@@ -22,7 +22,7 @@ header{
     top: 0%;
     background: rgb(215,215,215);
     background: linear-gradient(180deg, rgba(215,215,215,1) 0%, rgba(255,255,255,1) 100%);
-    height: 15vh;
+    height: 20vh;
     z-index: 1;
 }
 
@@ -66,7 +66,7 @@ a:hover::before {
    
    
 
-.hero{
+#hero{
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
@@ -79,7 +79,7 @@ a:hover::before {
     margin-top: 30px;
 }
 
-button {
+.button {
     width: 200px;
     height: 45px;
     font-size: 2vh;
@@ -94,7 +94,7 @@ button {
     margin: 20px;
    }
    
-   button::before {
+   .button::before {
     content: "";
     position: absolute;
     top: 0;
@@ -106,15 +106,15 @@ button {
     transition: all 0.5s;
    }
    
-   button:hover::before {
+   .button:hover::before {
     width: 100%;
    }
    
-   button:hover {
+   .button:hover {
     color: var(--ghost-white);
    }
    
-   button:active:before {
+   .button:active:before {
     background: #b9b9b9;
    }
 
@@ -150,11 +150,11 @@ button {
     border-radius: 10px;
 }
 
-.about-us{
+#about-us{
     text-align: center;
 }
 
-.about-us h1{
+#about-us h1{
     font-size: 40px;
     color: var(--independence);
 }
@@ -250,12 +250,12 @@ button {
   }
 
   
-  .contact{
+  #contact{
     display: flex;
     justify-content: center;
   }
 
-  .contact h1 {
+  #contact h1 {
     text-align: center;
     padding: 15px;
   }
@@ -309,4 +309,96 @@ input[type=text], textarea {
     align-items: center;
     background: rgb(215,215,215);
     background: linear-gradient(0deg, rgba(215,215,215,1) 0%, rgba(255,255,255,1) 100%);
+  }
+
+  #login-body{
+    background-image: url(./img/city-cityscape-night-architecture-anime-skyline-125676-wallhere.com.jpg)  ;
+    background-position: 0;
+  }
+
+  #login{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+  }
+
+
+  .login-container{
+    background-color: var(--ghost-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px black;
+    height: 600px;
+    width: 400px;  
+}
+
+
+  .login-container input[type=submit]{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .login-container input[type=submit]:hover{
+    background-color: var(--orange);
+    transition: ease 0.5s;
+  }
+
+  .login-span{
+    opacity: 0.5;
+  }
+
+  .login-social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px;
+  }
+
+  .login-social i{
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .social-button{
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey  ;
+    height: 40px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .social-button:hover{
+    background-color: var(--viridian);
+    color: white;
+    transition: ease 0.5s;
+  }
+
+  .register-container{
+    background-color: var(--ghost-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px black;
+    height: 600px;
+    width: 400px;  
+}
+
+.register-container input[type=submit]{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .register-container input[type=submit]:hover{
+    background-color: var(--orange);
+    transition: ease 0.5s;
   }

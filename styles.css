@@ -32,7 +32,7 @@ header{
     margin-right: 50px;
 }
 
-a {
+.a-nav {
     width: 200px;
     height: 45px;
     font-size: 14px;
@@ -47,7 +47,7 @@ a {
     
 }
 
-a::before{
+.a-nav::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -60,7 +60,7 @@ a::before{
     
 }
 
-a:hover::before {
+.a-nav:hover::before {
     width: 100%;
    }
    
